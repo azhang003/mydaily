@@ -1,0 +1,19 @@
+1.安装Java  yum install java
+2.新建文件夹 /usr/local/es
+3.下载es源文件  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.4.3.tar.gz
+4.解压文件 tar -zxvf elasticsearch-6.4.3.tar.gz
+5.添加用户 groupadd es
+	useradd es -g es -p es
+6.授权操作文件夹 chown -R es:es /usr/local/es/elasticsearch-6.4.3
+7.配置elasticsearch.yml(在安装包config目录下)  vi /usr/local/es/elasticsearch-6.4.3/config/elasticsearch.yml
+8.底部追加
+	network.host: 0.0.0.0
+	http.port: 9200
+9.切换用户
+
+	su es
+
+	cd /usr/local/es/elasticsearch-6.4.3/bin
+10.启动es
+
+bash elasticsearch

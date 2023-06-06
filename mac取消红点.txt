@@ -1,0 +1,4 @@
+defaults write com.apple.systempreferences AttentionPrefBundleIDs 0
+
+
+Killall Dock

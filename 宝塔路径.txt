@@ -1,0 +1,5 @@
+整站备份路径
+/www/backup/site/aaaanet_20221206_145704.zip
+重建php软连接
+rm /usr/bin/php -f
+ln -s /www/server/php/74/bin/php /usr/bin/php74

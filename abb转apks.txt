@@ -1,0 +1,8 @@
+
+
+//abb转apks
+bundletool build-apks --bundle=/Users/kaadonmac/555/514.aab   --output=/Users/kaadonmac/555/111a.apks  --ks=/Users/kaadonmac/555/newEnergy.keystore  --ks-pass=pass:123456 --ks-key-alias=newEnergy --key-pass=pass:123456
+
+
+//安装apks
+bundletool install-apks --apks=/Users/kaadonmac/555/111a.apks
